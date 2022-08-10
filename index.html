@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Conversor de moeda</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="page-title">Conversor de moedas</h1>
+      <label for="coin">Insira o valor em real:</label> <br />
+      <input type="number" id="valorReal" size="2" /> <br /><br />
+      <button type="submit" onclick="ConverterDolar()">Dólar</button>
+      <button type="submit" onclick="ConverterEuro()">Euro</button>
+      <button type="submit" onclick="ConverterLibra()">Libra</button>
+      <button type="submit" onclick="ConverterBitcoin()">Bitcoin</button>
+      <h2 id="valorConvertido">O valor convertido é:</h2>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
