@@ -19,7 +19,7 @@ function ConverterEuro() {
   var valorElementoEuro = document.getElementById('valorReal')
   var valorReal = valorElementoEuro.value
   var valorEmEuro = parseFloat(valorReal)
-  var valorEmReal = valorEmEuro * 0.1911753
+  var valorEmReal = (valorEmEuro * 0.1911753).toFixed(2)
 
   var elementoValorConvertido = document.getElementById('valorConvertido')
   var valorConvertido = 'O valor em Euro é Є ' + valorEmReal
@@ -41,7 +41,7 @@ function ConverterBitcoin() {
   var valorElementoBitcoin = document.getElementById('valorReal')
   var valorReal = valorElementoBitcoin.value
   var valorEmBitcoin = parseFloat(valorReal)
-  var valorEmReal = valorEmBitcoin * 0.0000084
+  var valorEmReal = (valorEmBitcoin * 0.0000084).toFixed(2)
 
   var elementoValorConvertido = document.getElementById('valorConvertido')
   var valorConvertido = 'O valor em Bitcoin é BTC ' + valorEmReal
